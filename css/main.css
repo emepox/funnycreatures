@@ -1,0 +1,1088 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #594057;
+}
+
+#wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	box-shadow: 15px 0 40px 0 rgba(103,58,183,.27), -15px 0 40px 0 rgba(103,58,183,.27);
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+	color: #8daf73;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+
+h1#logo {
+	font-size: 3rem;
+	font-family: "Dokdo", cursive;
+	letter-spacing: -3px;
+	display: inline-block;
+}
+
+ h1 + p {
+ 	line-height: 20px;
+ 	margin: 10px 0;
+ }
+
+h2, h3 {
+	margin: 10px 0;
+	color: #594057;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+
+}
+
+h4 {
+	color: #646f67;
+	font-weight: bold;
+	margin: 15px 0;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+/* a[href="#"] {
+	color: #b35d5d; 
+
+} */
+
+button:not(.buscador) {
+	padding: 10px 20px;
+	background: #8daf73;
+	cursor: pointer;
+	border-radius: 1px;
+	margin: 20px 0px;
+}
+
+button:hover:not(.buscador) {
+	background: #74905efa;
+}
+
+.btn-transparente {
+	cursor: pointer;
+	padding: 10px 20px;
+	color: #666;
+	font-size: 0.9rem;
+	border: 1px solid #8daf73;
+	border-radius: 3px;
+
+}
+
+.btn-transparente:hover {
+	background: #8daf7361;
+}
+
+.smaller {
+	font-size: smaller;
+	margin: 2px 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.contenedor {
+	margin: 40px 0;
+}
+
+.contenedor-xs {
+	margin: 10px 0;
+}
+
+
+.ocultar, .ocultar-xl {
+	display: none;
+}
+
+article {
+	text-align: center;
+}
+
+iframe {
+	width: 100%;
+}
+
+
+/*----- NAVEGACIÓN & LAYOUT -----*/
+
+/* Header */
+
+.bar, #menu > .desplegable > ul, .derecha {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+header .izquierda {
+	flex-basis: 48%;
+}
+
+header .derecha {
+	flex-basis: 48%;
+	justify-content: flex-end;
+}
+
+/* Main */
+
+main {
+	display: flex;
+	justify-content: space-around;
+	margin: 40px auto;
+	flex-direction: row-reverse;
+}
+
+#main-content {
+
+	flex-basis: 70%;
+	margin-bottom: 40px;
+
+}
+
+aside {
+	flex-basis: 23%;
+}
+
+aside > div {
+	box-shadow: 10px 0px 8px 0px rgba(0,0,0,.1);
+	padding: 1px 0;
+}
+
+
+
+/*------ HEADER -----*/
+
+#bar1 {
+	background: gainsboro;
+	padding: 10px 5px;
+	font-size: 0.8rem;
+}
+
+#bar1 i {
+	font-size: 1.2rem;
+	margin: 0 5px;
+}
+
+.registro {
+	margin-left: 15px;
+}
+
+#bar2 {
+	padding: 5px 0;
+
+}
+
+#bar2 form i {
+	background: white;
+}
+
+#logo p:first-child {
+	color: #8daf73;
+	font-size: 1.5rem;
+	margin-bottom: -13px;
+}
+
+#logo p:last-child {
+	color: #594057;
+}
+
+#cart > a {
+	margin-left: 10px;
+}
+
+/*----- MENÚ ---------*/
+
+#menu {
+	background: #594057;
+	color: gainsboro;
+	font-size: 0.9rem;
+	position: relative;
+}
+
+#menu a {
+	display: block;
+	padding: 10px 0;
+}
+
+#menu .desplegable > ul > li > a:hover {
+	background: #665a65;
+	color: #8ea38c;
+}
+
+#menu li {
+	position: relative;
+}
+
+/* Submenú */
+
+#menu li:hover ul {
+	display: block;
+	position: absolute;
+	z-index: 100;
+
+}
+
+#menu .submenu {
+	background: #7d5b7b;
+	padding: 10px;
+	font-size: 0.9rem;
+}
+
+.submenu > li:hover {
+	color: #8daf73;
+}
+
+
+
+/* Hamburguesa */
+
+.ocultar, #menu > input {
+	display: none;
+}
+
+}
+
+/*----- SLIDER ------*/
+
+#main-content > #slider {
+	margin-bottom: 20px;
+}
+
+#slider-btn li {
+	display: inline-block;
+}
+
+@keyframes slidy {
+	0% { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+
+section#slider { 
+		overflow: hidden; 
+}
+
+section#slider figure img { 
+		width: 20%;
+		display: inline-block; 
+		
+}
+
+section#slider figure { 
+	  position: relative;
+	  width: 500%;
+	  margin: 0;
+	  left: 0;
+	  text-align: left;
+	  font-size: 0;
+	  animation: 20s slidy infinite; 
+}
+
+
+/*----- DESTACADOS ------*/
+
+#destacados {
+	margin: 20px 0;
+}
+
+/* En oferta */
+
+.carrusel {
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.carrusel article {
+	line-height: 15px;
+	flex-basis: 25%;
+}
+
+.carrusel img {
+	margin: 10px 0;
+}
+
+.precio-tachado {
+	font-size: smaller;
+	text-decoration: line-through;
+	text-align: center;
+}
+
+.precio-rebajado {
+	color: red;
+	text-align: center;
+	font-weight: bold;
+	margin: 4px 0;
+}
+
+.precio-normal {
+	font-weight: bold;
+	margin: 5px 0;
+	position: absolute;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+}
+
+#pagina-producto .precio-normal {
+	position: static;
+}
+
+/* Estrellitas */
+
+
+.estrellitas {
+	margin: 10px 0;
+}
+
+.estrellitas i {
+	color: gainsboro;
+}
+
+.stars-1 > i:nth-child(1),
+.stars-2 > i:nth-child(-n+2),
+.stars-3 > i:nth-child(-n+3),
+.stars-4 > i:nth-child(-n+4),
+.stars-5 > i:nth-child(-n+5) {
+	color: #8daf73;
+}
+
+
+/* Más vendidos */
+
+#mas-vendidos {
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+
+}
+
+#mas-vendidos .bloque {
+	flex-basis: 47%;
+	box-shadow: 0 6px 15px 0 rgba(0,0,0,0.18);
+
+}
+
+#mas-vendidos h3 {
+	text-align: center;
+	padding: 10px;
+	background: #594057;
+	color: gainsboro;
+	font-weight: 300;
+}
+
+.listas-productos {
+	padding: 20px;
+}
+
+.listas-productos li {
+	margin: 20px 0;
+	border-bottom: 1px #646f6738 solid;
+	padding-bottom: 10px;
+}
+
+.listas-productos a {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.listas-productos a > div:first-child {
+	flex-basis: 30%;
+}
+
+.listas-productos a > div:last-child {
+	flex-basis: 60%;
+}
+
+.listas-productos h4 {
+	margin-bottom: 15px;
+}
+
+/* Blog */
+
+.blog {
+	margin: 40px 0;
+}
+
+.blog > div:first-of-type {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.blog figure {
+	margin: 20px 0;
+	flex-basis: 47%;
+	position: relative;
+}
+
+.blog figcaption {
+	padding: 20px;
+	font-size: 1.2rem;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 0px;
+	background: gainsboro;
+}
+
+.blog > div:last-of-type {
+	margin-left: 10px;
+}
+
+.blog > div:last-of-type > a {
+	padding: 10px 20px;
+	background: #8daf73;
+	border-radius: 5px;
+}
+
+.blog > div:last-of-type > a:hover {
+	color: gainsboro;
+}
+
+
+
+/* Texto */
+
+.texto p {
+	margin: 10px 0;
+}
+
+.texto img {
+	float: left;
+}
+
+
+/*----- ASIDE ------*/
+
+/* Banner */
+
+.anuncio {
+	border: 5px gainsboro solid;
+	box-sizing: border-box;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.publicidad .anuncio div {
+	border: 2px gainsboro dashed;
+	margin: 5px;
+	padding: 5px;
+}
+
+
+/* Categorías */
+
+.listas-links > div > div {
+	margin: 20px 0;
+}
+
+.listas-links li {
+	line-height: 20px;
+}
+
+.listas-links li:first-child {
+	color: #646f67;
+	font-weight: bold;
+}
+
+/*------ FOOTER -----*/
+
+footer {
+	background: #594057;
+	color: #a4afa3;
+	font-size: smaller;
+}
+
+footer > .columnas {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-around;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+
+/* Copyright */
+
+#copyright {
+	background: #423140;
+}
+
+#copyright > p {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 0.7rem;
+}
+
+/* Logo Fijo */
+.fixed-logo {
+	position: fixed;
+	bottom: 0px;
+}
+
+
+/*---- GENÉRICOS -----*/
+
+/*Leer más*/
+
+.leer-mas-boton {
+  display: none;
+}
+
+.leer-mas-oculto {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.leer-mas-boton:checked ~ .leer-mas-oculto {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  display: block;
+}
+
+.leer-mas-boton ~ .leer-mas-activador:before {
+  content: 'Leer más';
+}
+
+.leer-mas-boton:checked ~ .leer-mas-activador:before {
+  content: 'Leer menos';
+}
+
+.leer-mas-activador {
+  display: inline-block;
+  position: relative;
+  margin-top: 5px;
+}
+
+
+/*--- PRODUCTOS --- */
+
+#pagina-producto, #pagina-contacto {
+	display: block;
+	max-width: 90%;
+	margin: 20px auto;
+}
+
+#producto, #contacto {
+	margin: 20px 0;
+}
+
+
+/*--- MIGAS --- */
+
+.migas {
+	display: flex;
+	justify-content: space-between;
+}
+
+.migas > div {
+	margin: 10px 0;
+}
+
+.migas a:not(:last-of-type) {
+	color: #a4afa3;
+}
+
+/* ----- BLOQUE1 ----- */
+
+.producto-bloque1 {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.texto-producto {
+	flex-basis: 48%;
+
+}
+
+/* Fotos */
+
+.foto-principal {
+	margin-bottom: 50px;
+}
+
+
+.lista-fotos > ul {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: space-around;
+}
+
+.lista-fotos li {
+	border: 1px solid transparent;
+}
+
+
+.lista-fotos li:hover {
+	cursor: pointer;
+	border: 1px solid #8daf73;
+
+}
+
+
+/* Descripción */
+
+hgroup + p, h1 + p {
+	margin: 20px 0;
+}
+
+#producto h1 + h2 {
+	color: #59405785;
+}
+
+
+/* Especies */
+
+.lista-carrito {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 5px 0;
+	box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.18);
+	padding: 10px 0;
+
+}
+
+.lista-carrito > div {
+	flex-wrap: wrap;
+
+}
+
+.lista-carrito > div:nth-child(1) {
+	flex-basis: 12%;
+	border-right: 1px solid gainsboro;
+	text-align: center;
+
+}
+
+.lista-carrito > div:nth-child(2) {
+	flex-basis: 50%;
+
+}
+
+.lista-carrito > div:nth-child(3) {
+	flex-basis: 20%;
+	text-align: center;
+
+}
+
+.lista-carrito .precio-normal {
+	text-align: center;
+}
+
+.lista-carrito p:first-of-type {
+	color: #8daf73;
+	font-weight: bold;
+}
+
+.lista-carrito button {
+	margin-top: 2px;
+}
+
+/*------- BLOQUE 2 -----*/
+
+.producto-bloque2{
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.producto-bloque2 > div {
+	flex-basis: 75%;
+}
+
+.producto-bloque2 > aside {
+	flex-basis: 21%;
+}
+
+/* Relacionados */
+
+#producto aside > div {
+	box-shadow: none;
+}
+
+
+
+/* Opiniones */
+
+.lista-opiniones {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 5px 0;
+	padding: 10px 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid gainsboro;
+
+}
+
+.lista-opiniones > div {
+	flex-wrap: wrap;
+
+}
+
+.lista-opiniones > div:nth-child(1) {
+	flex-basis: 25%;
+	border-right: 1px solid gainsboro;
+	text-align: center;
+
+}
+
+.lista-opiniones > div:nth-child(2) {
+	flex-basis: 75%;
+	margin-left: 10px;
+
+}
+
+.lista-opiniones p:first-of-type {
+	font-weight: bold;
+}
+
+
+/*--- CONTACTO --- */
+
+/* Formulario */
+
+ #contacto .fotos,  #contacto .mapa {
+ 	flex-basis: 47%;
+ }
+
+ #contacto .texto-producto {
+ 	flex-basis: 50%;
+ }
+
+
+ #contacto .producto-bloque2 {
+ 	margin: 60px 0;
+ }
+
+ #contacto legend {
+	margin-bottom: 10px;
+	font-size: 1.3rem;
+}
+
+#contacto fieldset input, #contacto fieldset textarea {
+	width: 90%;
+	margin-top: 2px;
+	box-sizing: border-box;
+	height: 30px;
+}
+
+#contacto textarea {
+	resize: none;
+	min-height: 154px;
+}
+
+#contacto button {
+	margin-top: 10px;
+}
+
+/* Newsletter */
+
+.newsletter {
+	background: gainsboro;
+	position: relative;
+}
+
+.newsletter .form-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.newsletter .form-content > div:nth-of-type(1) {
+	flex-basis: 30%;
+}
+
+.newsletter .form-content > div:nth-of-type(2) {
+	flex-basis: 35%;
+}
+
+.newsletter .form-content > div:nth-of-type(3) {
+	flex-basis: 10%;
+}
+
+.opciones-newsletter {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/* Personalizado */
+
+#monstruo-personalizado fieldset > div > div {
+	margin: 20px 0;
+}
+
+
+#monstruo-personalizado fieldset > div li {
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+}
+
+#monstruo-personalizado .datos li > input {
+	flex-basis: 50%;
+}
+
+#monstruo-personalizado .datos li > label {
+	flex-basis: 25%;
+}
+
+#monstruo-personalizado .checkboxv li > input[type="checkbox"] {
+	flex-basis: 2%;
+}
+
+#monstruo-personalizado .checkboxv li > label {
+	flex-basis: 50%;
+}
+
+#monstruo-personalizado .checkbox ul {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+#monstruo-personalizado .checkbox ul > li {
+	flex-basis: 33%;
+}
+
+
+#monstruo-personalizado .checkbox p {
+	margin-bottom: 10px;
+}
+
+#monstruo-personalizado fieldset h2 {
+	margin-top: 20px;
+}
+
+#monstruo-personalizado fieldset textarea {
+	resize: none;
+	box-sizing: border-box;
+	width: 100%;
+	height: 200px;
+}
+
+.personalizado {
+	height: auto;
+	padding: 10px;
+}
+
+.personalizado > a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background: gainsboro;
+	padding: 10px;
+}
+
+.personalizado div:first-of-type {
+	flex-basis: 21%;
+}
+
+.personalizado div:last-of-type {
+	flex-basis: 70%;
+	text-align: right;
+	padding: 0 20px;
+}
+
+
+.personalizado div > p:first-of-type {
+	font-size: 2.6rem;
+	font-family: "Dokdo", cursive;
+}
+
+
+
+
+
+/*---------------------- LISTAS --------------------------*/
+
+.lista-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	margin: 20px 0;
+}
+
+.lista-wrapper > article {
+	flex-basis: 33%;
+	margin: 10px 0;
+	position: relative;
+
+}
+
+.paginacion > ul {
+	display: flex;
+	justify-content: center;
+}
+
+.paginacion li {
+	border: 1px gainsboro solid;
+}
+
+.paginacion li:hover {
+	background: gainsboro;
+}
+
+.paginacion a {
+	display: block;
+	padding: 20px;
+}
+
+
+
+/* Dropdown */
+
+.ordenar {
+	text-align: right;
+}
+
+.ordenar ul {
+	display: none;
+
+}
+
+.ordenar > button:checked + ul {
+	display: block;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  z-index: 99;
+}
+
+.dd-button {
+  display: inline-block;
+  padding: 10px 30px 10px 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+}
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  list-style-type: none;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+  position: absolute;
+  right: 0px;
+} 
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
+.dd-menu li.divider{
+  padding: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/*--- Asides ----*/
+
+.relacionados {
+	border: 1px solid gainsboro;
+	box-shadow: 10px 0px 8px 0px rgba(0,0,0,.1);
+	text-align: center;
+	padding-top: 20px;
+	max-width: 95%;
+}
+
+.carrusel-vertical article {
+	margin: 20px 0;
+
+}
+
+.carrusel-vertical img {
+	max-width: 50%;
+}
+
+.publicidad {
+	margin: 0 10px;
+}
+

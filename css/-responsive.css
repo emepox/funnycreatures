@@ -1,0 +1,471 @@
+
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ 950px _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+
+
+@media (max-width: 960px) {
+
+
+	main {
+		display: block;
+		max-width: 96%;
+	}
+
+	/* Listas */
+
+	.listas-links > div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.listas-links div > div {
+		flex-basis: 20%;
+	}
+
+	.carrusel-vertical {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.carrusel-vertical article {
+		flex-basis: 50%;
+	}
+
+	#pagina-producto .carrusel-vertical article {
+		flex-basis: 100%;
+	}
+
+	/* Texto */
+	.texto {
+		max-width: 95%;
+		margin: 0 auto;
+	}
+
+	/* Footer */
+
+	footer .columnas .listas-links {
+		flex-basis: 34%;
+		margin: 20px 10px;
+		font-size: larger;
+	}
+
+/* Contacto */
+	#pagina-contacto .carrusel-vertical {
+		display: block;
+		font-size: smaller;
+		padding: 2px;
+	}
+
+	#pagina-contacto .carrusel-vertical .estrellitas {
+		font-size: 11px;
+	}
+
+/* Publicidad */
+	.publicidad {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+
+
+}
+
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ 770px _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+@media (max-width: 770px) {
+
+/*-------------------------HAMBURGUESA-----------------------*/
+main {
+	margin: 15px auto;
+
+}
+
+	#menu {
+		display: block;
+		background: #594057;
+		padding: 10px;
+	}
+
+	#menu span {
+		 display: block;
+		 width: 33px;
+		 height: 4px;
+		 margin-bottom: 5px;
+		 position: relative;
+		 background: gainsboro;
+
+	}
+
+	#menu .desplegable {
+		display: none;
+	}
+
+	#menu > input {
+		display: block;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		top: -7px;
+		left: 25px;
+		opacity: 0;
+		z-index: 2;
+
+	}
+
+	#menu > input:hover {
+		cursor: pointer;
+	}
+
+	#menu input:checked ~ .desplegable {
+		display: block;
+		background: #675866;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		box-shadow: 5px -1px 9px -5px rgba(0,0,0,0.75);
+		padding: 10px 20px;
+		border: 0px solid gainsboro;
+
+	}
+
+	#menu .desplegable > ul {
+		justify-content: flex-start;
+	}
+
+	#menu .submenu {
+		background: #594057;
+	}
+
+	.desplegable > ul > li {
+		cursor: pointer;
+		flex-basis: 49.8%;
+
+	}
+
+	.desplegable > ul > li:hover {
+	border-top: 1px gainsboro solid;
+	}
+
+	#rashitas {
+		padding-left: 20px;
+	}
+
+	#menu li:hover ul {
+
+	right: 0px;
+	top: 0px;
+	line-height: 10px;
+
+	}
+
+
+/*------ HOME DESTACADOS---------*/
+	.carrusel article {
+		flex-basis: 35%;
+		margin: 20px 0;
+	}
+
+
+/*------- ASIDE ----------*/
+	.carrusel-vertical {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.carrusel-vertical > article {
+		flex-basis: 50%;
+	}
+
+	#pagina-producto .producto-bloque2 > aside {
+		flex-basis: 100%;
+	}
+
+
+
+/*------ Newsletter ---------*/
+
+	.newsletter .form-content > div:nth-of-type(1) {
+		flex-basis: 20%;
+	}
+
+	.opciones-newsletter {
+		display: block;
+		justify-content: stretch;
+	}
+
+/* ----------------- PÁGINA PRODUCTOS ----------------------*/
+
+	.producto-bloque1 > .fotos {
+		text-align: center;
+	}
+
+	.lista-fotos > ul {
+		justify-content: center;
+	}
+
+	.producto-bloque1 > .fotos {
+		margin-bottom: 20px;
+	}
+	
+	#pagina-producto .relacionados {
+		max-width: 100%;
+	}
+
+	#pagina-producto .carrusel-vertical article > a {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+	}
+
+	#pagina-producto .carrusel-vertical article > a > div:first-of-type {
+		flex-basis: 70%;
+	}
+
+	#pagina-producto .carrusel-vertical article > a > div:last-of-type {
+		flex-basis: 68%;
+	}
+
+	#pagina-producto .carrusel-vertical img {
+		max-width: 100%;
+	}
+
+	#pagina-producto article .precio-tachado, #pagina-producto article .precio-rebajado {
+		text-align: left;
+	}
+
+
+/*----------------- PÁGINA CONTACTO -----------------------*/
+
+	.producto-bloque1,.producto-bloque2 {
+		display: block;
+	}
+
+	#contacto .producto-bloque2 {
+		margin: 20px 0;
+	}
+
+	.producto-bloque1 form {
+		margin: 0 auto;
+	}
+
+	.mapa {
+		margin-top: 10px;
+	}
+
+/*----------------- PÁGINA CONTACTO PERSONALIZADA -----------------------*/
+
+	#monstruo-personalizado fieldset .datos > div li {
+		justify-content: space-between;
+	}
+
+	#monstruo-personalizado .datos li > label {
+		flex-basis: 43%;
+	}
+
+	#monstruo-personalizado .checkbox ul > li {
+		flex-basis: 50%;
+	}
+
+
+
+	
+
+}
+
+
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ 595px _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+@media (max-width: 595px) {
+
+	.ocultar-xs {
+		display: none;
+	}
+
+	.contenedor {
+		margin: 30px 0;
+	}
+
+	.listas-links li {
+		line-height: 30px;
+	}
+
+/* Cabeceras */
+	
+
+	#bar1 {
+		font-size: 1.1rem;
+	}
+
+	#bar1 .izquierda {
+		flex-basis: 40%;
+	}
+
+	#bar1 .derecha {
+		flex-basis: 55%;
+	}
+
+	#bar2 {
+		display: block;
+		text-align: center;
+	}
+
+	#bar2 > .derecha {
+		position: absolute;
+		right: 15px;
+		top: 119px;
+		z-index: 99;
+		color: gainsboro;
+	}
+
+	#bar2 input[type="search"] {
+		max-width: 117px;
+	}
+
+
+
+/* Menú */
+	#menu .desplegable > ul {
+		display: block;
+	}
+
+
+/* Oferta */
+
+	.carrusel article, .carrusel-vertical article, .lista-wrapper article { /*------------- PNER A 100 -----------------*/
+		flex-basis: 98%;
+	}
+
+	.carrusel article > a, .carrusel-vertical article > a, .lista-wrapper article > a {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+	}
+
+	.carrusel article > a > div:first-of-type, .carrusel-vertical article > a > div:first-of-type, .lista-wrapper article > a > div:first-of-type {
+		flex-basis: 70%;
+	}
+
+	.carrusel article > a > div:last-of-type, .carrusel-vertical article > a > div:last-of-type, .lista-wrapper article > a > div:last-of-type {
+		flex-basis: 68%;
+	}
+
+	article .precio-tachado, article .precio-rebajado {
+		text-align: left;
+	}
+
+	.carrusel-vertical img {
+		max-width: 100%;
+	}
+
+	.relacionados {
+		max-width: 100%;
+	}
+
+
+
+/* Más vendidos */
+	
+	#mas-vendidos > .bloque {
+		flex-basis: 100%;
+	}
+
+/* Blog */
+
+	.blog figure {
+		flex-basis: 100%;
+	}
+
+/* Descripción */
+	.texto img {
+		display: inherit;
+		margin: 0 auto;
+		float: none;
+	}
+
+/* Newsletter */
+
+	.newsletter .form-content {
+		text-align: center;
+		padding: 10px 0;
+
+	}
+
+	.newsletter .form-content > div:nth-of-type(1) {
+	flex-basis: 100%;
+	}
+
+	.newsletter .form-content > div:nth-of-type(2) {
+		flex-basis: inherit;
+		text-align: left;
+		padding: 20px 0;;
+
+	}
+
+	.newsletter .form-content > div:nth-of-type(3) {
+		flex-basis: 100%;
+	}
+
+
+
+/* Footer */
+	footer .columnas .listas-links {
+		flex-basis: 90%;
+	}
+
+
+/*-------------- PÁGINA PRODUCTO -----------------*/
+	#pagina-producto .lista-opiniones .estrellitas {
+		font-size: 11px;
+	}
+	.lista-opiniones > div:nth-child(1) {
+		flex-basis: 40%;
+	}
+
+/*---------- CONTAC PERSONALIZADO -----------*/
+
+#monstruo-personalizado .checkbox > ul > li {
+	flex-basis: 50%;
+}
+
+#monstruo-personalizado .checkbox ul > li {
+		flex-basis: 100%;
+	}
+
+	.personalizado div:first-of-type {
+	flex-basis: 100%;
+	text-align: center;
+}
+
+	.personalizado div:last-of-type {
+	flex-basis: 100%;
+	text-align: center;
+	
+}
+
+/* Listas */
+
+	.precio-normal {
+		position: static;
+	}
+
+
+}
+
+
+
+
+/*-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ 330px _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+@media (max-width: 330px) {
+
+
+
+
+}
+
+
+
